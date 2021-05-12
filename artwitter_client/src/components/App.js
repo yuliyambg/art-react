@@ -1,10 +1,11 @@
 import React from 'react';
-import ArtsContainer from "./ArtsContainer";
+
+import Router from "./Router";
 
 const App = () => {
     return(
         <div>
-            <ArtsContainer />
+            <Router />
         </div>
     )
 }

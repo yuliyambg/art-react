@@ -13,8 +13,8 @@ class ArtsContainer extends Component {
     render() {
         return (
             <div>
-                <ArtsForm />
                 ArtsContainer
+                <ArtsForm />
             </div>
         )
     }
