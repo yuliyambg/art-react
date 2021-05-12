@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { fetchArts} from "../actions/artsActions";
 import ArtsForm from "./ArtsForm";
+import ArtsList from "./ArtsList";
 
 class ArtsContainer extends Component {
 
@@ -15,6 +16,7 @@ class ArtsContainer extends Component {
             <div>
                 ArtsContainer
                 <ArtsForm />
+                <ArtsList />
             </div>
         )
     }
