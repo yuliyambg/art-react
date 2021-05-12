@@ -7153,3 +7153,104 @@ Processing by ArtsController#index as HTML
 Completed 200 OK in 127ms (Views: 49.3ms | ActiveRecord: 57.3ms | Allocations: 7801)
 
 
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:14:22 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (6.2ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 110ms (Views: 52.7ms | ActiveRecord: 46.7ms | Allocations: 7565)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:15:05 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (61.9ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 67ms (Views: 4.9ms | ActiveRecord: 61.9ms | Allocations: 2073)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:17:38 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (5.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 5.0ms | Allocations: 2073)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:18:48 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (1.2ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 1.2ms | Allocations: 2073)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:19:38 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (39.9ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 45ms (Views: 4.9ms | ActiveRecord: 39.9ms | Allocations: 2073)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:41:26 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (10.8ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 92ms (Views: 42.3ms | ActiveRecord: 10.8ms | Allocations: 2151)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:42:04 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (13.0ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 42ms (Views: 28.3ms | ActiveRecord: 13.0ms | Allocations: 2055)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 13:44:01 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (1.1ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 1.1ms | Allocations: 2055)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 14:10:07 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (8.1ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 81ms (Views: 66.6ms | ActiveRecord: 8.1ms | Allocations: 2150)
+
+
+Started POST "/arts" for 127.0.0.1 at 2021-05-12 14:11:51 -0400
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 14:11:51 -0400
+Processing by ArtsController#create as */*
+  Parameters: {"art"=>{}}
+Completed 400 Bad Request in 26ms (ActiveRecord: 0.0ms | Allocations: 128)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: art):
+  
+app/controllers/arts_controller.rb:30:in `art_params'
+app/controllers/arts_controller.rb:13:in `create'
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (10.3ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 6.7ms | ActiveRecord: 10.3ms | Allocations: 2149)
+
+
+Started GET "/arts" for 127.0.0.1 at 2021-05-12 14:16:44 -0400
+Processing by ArtsController#index as */*
+  [1m[36mArt Load (29.3ms)[0m  [1m[34mSELECT "arts".* FROM "arts"[0m
+  ↳ app/controllers/arts_controller.rb:8:in `index'
+Completed 200 OK in 115ms (Views: 84.5ms | ActiveRecord: 29.3ms | Allocations: 2055)
+
+
+Started POST "/arts" for 127.0.0.1 at 2021-05-12 14:17:09 -0400
+Processing by ArtsController#create as */*
+  Parameters: {"title"=>"New", "artist_name"=>"Fuu J", "image_url"=>"https://images.unsplash.com/photo-1604535480782-13fb81ac9927?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MzV8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", "art"=>{"title"=>"New", "artist_name"=>"Fuu J", "image_url"=>"https://images.unsplash.com/photo-1604535480782-13fb81ac9927?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MzV8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/arts_controller.rb:15:in `create'
+  [1m[36mArt Create (27.2ms)[0m  [1m[32mINSERT INTO "arts" ("title", "artist_name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "New"], ["artist_name", "Fuu J"], ["image_url", "https://images.unsplash.com/photo-1604535480782-13fb81ac9927?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MzV8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"], ["created_at", "2021-05-12 18:17:09.946682"], ["updated_at", "2021-05-12 18:17:09.946682"]]
+  ↳ app/controllers/arts_controller.rb:15:in `create'
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/arts_controller.rb:15:in `create'
+Completed 201 Created in 154ms (Views: 15.4ms | ActiveRecord: 35.8ms | Allocations: 2991)
+
+
