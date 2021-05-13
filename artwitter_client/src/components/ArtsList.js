@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 const ArtsList = ({arts}) => {
     return (
         <div>
-            {arts.map(art => <div><ul><li key={art.id}>{art.title} - {art.artist_name}</li></ul> <img src={art.image_url} /></div>)}
+            {arts.map(art => <div><ul><li key={art.id}><a href={`arts/${art.id}`}>{art.title} - {art.artist_name}</a></li></ul> <img src={art.image_url} /></div>)}
         </div>
     );
 };
