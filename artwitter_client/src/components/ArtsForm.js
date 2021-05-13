@@ -27,7 +27,7 @@ class ArtsForm extends Component {
 
     render() {
         return (
-            <form className={styles.form} conSubmit={this.handleSubmit}>
+            <form className={styles.form} onSubmit={this.handleSubmit}>
                 <label>Title:</label><br/>
                 <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/> <br/>
                 <label>Artist Name:</label><br/>
