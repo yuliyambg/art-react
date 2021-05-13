@@ -1,6 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
+
+// import React, {useState} from "react";
 import {connect} from "react-redux";
-import {addArt, fetchArt, fetchArts} from "../actions/artsActions";
+// import {addArt, fetchArt, fetchArts} from "../actions/artsActions";
+import { fetchArt } from "../actions/artsActions";
 
 class Art extends React.Component {
 

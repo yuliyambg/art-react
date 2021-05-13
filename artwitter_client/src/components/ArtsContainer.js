@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux';
+import styles from '../styles/styles.module.css';
 
 import { fetchArts} from "../actions/artsActions";
 import ArtsForm from "./ArtsForm";
@@ -14,7 +15,7 @@ class ArtsContainer extends Component {
     render() {
         return (
             <div>
-                ArtsContainer
+                <h1 className={styles.maintitle} >ArtsContainer</h1>
                 <ArtsForm />
                 <ArtsList />
             </div>

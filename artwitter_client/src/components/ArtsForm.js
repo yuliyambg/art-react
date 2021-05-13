@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { connect} from "react-redux";
-
-import { addArt} from "../actions/artsActions";
+import styles from '../styles/styles.module.css';
+import { addArt } from "../actions/artsActions";
 
 class ArtsForm extends Component {
     state = {
@@ -27,17 +27,19 @@ class ArtsForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>Title:</label>
+            <form className={styles.form} conSubmit={this.handleSubmit}>
+                <label>Title:</label><br/>
                 <input type='text' value={this.state.title} onChange={this.handleChange} name="title"/> <br/>
-                <label>Artist Name:</label>
+                <label>Artist Name:</label><br/>
                 <input type='text' value={this.state.artist_name} onChange={this.handleChange} name="artist_name"/><br/>
-                <label>Image:</label>
+                <label>Image:</label><br/>
                 <input type='text' value={this.state.image_url} onChange={this.handleChange} name="image_url"/><br/>
-                <input type='submit' value="Create Art"/>
+                <input className={styles.btn} type='submit' value="Create Art"/>
             </form>
         )
     }
 }
+
+
 
 export default connect(null, {addArt})(ArtsForm);
