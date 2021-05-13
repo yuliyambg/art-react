@@ -4,6 +4,8 @@ export const artsReducer = (state = [], action) => {
             return action.payload
         case 'ADD_ART':
             return [...state, action.payload]
+        case 'FETCH_ART':
+            return action.payload
         default:
             return state
     }
