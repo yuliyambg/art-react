@@ -10,6 +10,7 @@ class ArtsController < ApplicationController
 
   # POST /arts
   def create
+    puts art_params
     @art = Art.new(art_params)
 
     if @art.save
@@ -19,6 +20,11 @@ class ArtsController < ApplicationController
     end
   end
 
+  # GET /arts/:id
+  def show
+    @art = Art.find(params[:id])
+    render json: @art
+  end
 
   private
 #     def set_art
