@@ -26,5 +26,6 @@ export const fetchArt = id => {
         fetch(`http://127.0.0.1:3000/arts/${id}`)
             .then(resp => resp.json())
             .then(art => dispatch({ type: 'FETCH_ART', payload: art}))
+
     }
 }
