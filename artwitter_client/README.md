@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+Artwitter allows a user to post art and other users to post comments on the art. It was built to enable people to meet on the platform and discuss about art.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app uses Rails API back-end with PostgreSQL database and React / Redux for the front-end.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+## The Back-End:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The following end-points are used in the API to fetch data:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* 'http://localhost:3000/arts' : This is the index for fetching all arts and contains nested comments for each art. This end point has get and post routes for creating new arts.
 
-### `yarn test`
+* 'http://localhost:3000/arts/${id}/comments' :This route is allowing to get and post comments for a specific art.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## The Front-End
 
-### `yarn build`
+This app utilizes React and Redux on the front-end and Thunk middleware when creating the store allowing action creators dispatch asynchronous fetch requests to the database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
+To get started with the app, clone the repo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* `Git Clone`
+Navigate to artwitter_api directory
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `cd artwitter_api`
+Install the needed gems
 
-### `yarn eject`
+* `bundle install`
+Start PostgreSQL server
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+'https://www.postgresql.org/download/'
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create the database
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* `rake db:create`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Migrate the database
 
-## Learn More
+* `rake db:migrate`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Seed the database
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* `rake db:seed`
 
-### Code Splitting
+Run the app in local server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* `rails s`
 
-### Analyzing the Bundle Size
+Navigate to the top of the client directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* `cd artwiter_client`
 
-### Making a Progressive Web App
+Install the dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* `npm install`
 
-### Advanced Configuration
+Clone the repo, install and starts the API server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Start React server
 
-### Deployment
+* `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `yarn build` fails to minify
+Bug reports and pull requests are welcome on GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Additional Information
+Click on Artwork title to see each individual art and access Comments Section (view comments & post comments)
+
+## License
+
+All source code is available under MIT License. See LICENSE.md for details.
