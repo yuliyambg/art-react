@@ -12,10 +12,13 @@ class ArtsContainer extends Component {
         this.props.fetchArts()
     }
 
+
+
     render() {
         return (
             <div>
-                <h1 className={styles.maintitle} >ArtsContainer</h1>
+                <h1 className={styles.maintitle} >Artwitter</h1>
+                {/*<button onClick={showForm}>AddArt</button>*/}
                 <ArtsForm />
                 <ArtsList />
             </div>
