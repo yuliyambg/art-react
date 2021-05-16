@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 const CommentList = ({comments}) => {
     return (
         <ul>
-            {comments.map(comment => <li key={comment.created_at}>{comment.content} - {comment.name}</li>)}
+            {comments.map(comment => <li key={comment.id}>{comment.content} - {comment.name}</li>)}
         </ul>
     );
 };

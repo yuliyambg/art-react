@@ -13,12 +13,10 @@ class ArtsContainer extends Component {
     }
 
 
-
     render() {
         return (
             <div>
                 <h1 className={styles.maintitle} >Artwitter</h1>
-                {/*<button onClick={showForm}>AddArt</button>*/}
                 <ArtsForm />
                 <ArtsList />
             </div>
