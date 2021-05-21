@@ -11,9 +11,9 @@ const ArtsList = ({arts}) => {
 
                 {arts.map(art => {
                     return (
-                        <Card>
+                        <Card key={art.id}>
                             <Card.Body>
-                                <li key={art.id}><a href={`arts/${art.id}`}>{art.title} - {art.artist_name}</a></li>
+                                <li><a href={`arts/${art.id}`}>{art.title} - {art.artist_name}</a></li>
                                 <img src={art.image_url}/>
                             </Card.Body>
                         </Card>
