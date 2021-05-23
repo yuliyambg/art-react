@@ -4,7 +4,7 @@ import { fetchArt } from "../actions/artsActions";
 
 class Art extends React.Component {
 
-    componentWillMount() {
+    componentDidMount() {
         this.props.fetchArt(this.props.artId);
     }
 

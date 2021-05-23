@@ -10,9 +10,9 @@ class ArtContainer extends Component {
 
 
     componentDidMount() {
+        // console.log(this.props)
         this.props.fetchComments(this.props.match.params.id)
     }
-
 
 
     render() {
