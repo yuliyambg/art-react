@@ -2,9 +2,14 @@
 
 export const fetchArts = () => {
     return (dispatch) => {
+        console.log("c")
         fetch('http://127.0.0.1:3000/arts')
             .then(resp => resp.json())
-            .then(arts => dispatch({ type: 'FETCH_ARTS', payload: arts}))
+            .then(arts => {
+                console.log("d")
+                dispatch({ type: 'FETCH_ARTS', payload: arts})
+            }
+        )
     }
 }
 

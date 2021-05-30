@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Card, CardColumns } from "react-bootstrap";
-
+import {Link} from "react-router-dom"
 
 const ArtsList = ({arts}) => {
 
@@ -13,7 +13,8 @@ const ArtsList = ({arts}) => {
                     return (
                         <Card key={art.id}>
                             <Card.Body>
-                                <li><a href={`arts/${art.id}`}>{art.title} - {art.artist_name}</a></li>
+                                {/*<li><a href={`arts/${art.id}`}>{art.title} - {art.artist_name}</a></li>*/}
+                                <li><Link to={`/arts/${art.id}`}>{art.title} - {art.artist_name}</Link></li>
                                 <img src={art.image_url}/>
                             </Card.Body>
                         </Card>
